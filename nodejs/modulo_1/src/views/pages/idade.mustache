@@ -1,0 +1,17 @@
+{{>partials/head}}
+<body>
+    {{>partials/header}}
+
+    <h2>idade</h2>
+    <form method="post" action="/mostrar-idade">
+        <input type="number" name="ano" placeholder="digite seu nome">
+        <button type="submit">Enviar</button>
+    </form>
+    {{#idade}} 
+        {{idade}} anos!
+    {{/idade}}
+    {{^idade}}
+        Digite seu ano de nascimento!!!
+    {{/idade}}
+</body>
+</html>
